@@ -1,2 +1,2 @@
-# aplicacion-python-flask-libreria
-Una aplicacion web con python y flask de compra y venta de libros
+# Aplicacion Web con Python y Flask Libreria
+Una aplicacion web python y Flask para la gestion de compra y venta de libros online.
