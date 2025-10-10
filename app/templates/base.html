@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Flask</title>
+    {{ bootstrap.load_css()}}
+    {% block customcss %}
+    {% endblock %}
+</head>
+<body>
+    <div class="container">
+        {% block container %}
+        {% endblock %}
+    </div>
+    {{bootstrap.load_js()}}
+    {% block customjs %}
+    {% endblock %}
+</body>
+</html>
