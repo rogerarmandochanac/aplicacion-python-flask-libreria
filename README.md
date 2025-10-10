@@ -12,3 +12,9 @@ Una aplicacion web python y Flask para la gestion de compra y venta de libros on
 * MarkupSafe==3.0.3
 * Werkzeug==3.1.3
 * WTForms==3.2.1
+# Instrucciones
+* Se requiere Python 3.11.2 o superior
+* Crear un entorno virtual con virtualenv virtualenv nombreEntorno
+* Activar el entorno virtual con source nombreEntorno/bin/activate (Para Linux)
+* Instalar los paquetes necesarios que se encuentran en requirements.txt con pip install -r requirements.txt
+* Ejecutar el manage.py con python3 manage.py
