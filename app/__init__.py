@@ -74,7 +74,7 @@ def listaLibros():
     data = {
         'libros':ModeloLibro.listadoDeLibros(db)
     }
-    return render_template('listado_libros.html', data=data)
+    return render_template('libros.html', data=data)
 
 def pagina_no_encontrada(error):
     return render_template('errors/404.html'), 404

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block container %}
+    <div class="col">
+        <div class="row">
+            <h1 class="text-center mt-3">Listado de Libros</h1>
+        </div>
+        <hr>
+        <div class="row">
+            {% for libro in data.libros %}
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        {% set url = 'image/portadas/' + libro.isbn + '.jpg' %}
+                        <img class="card-img-top" src="{{url_for('static', filename=url)}}" alt="Card image cap" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{libro.titulo}}</h5>
+                            <p class="card-text">{{libro.autor.nombres}}</p>
+                            <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                        </div>
+                    </div>  
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
